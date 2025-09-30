@@ -1,20 +1,11 @@
 import { withMetadata } from "@/app/utils/withMetadata";
-import React from "react";
+import ActivityClient from "./ActivityClient";
 
 export const metadata = withMetadata(
-  "Aktivitas",
-  "Halaman tentang aktivitas dalam website"
+  "Aktivitas Belajar",
+  "Temukan berbagai tugas, quiz, dan game seru!"
 );
 
-const ActivityPage = () => {
-  return (
-    <div>
-      <section className="container mx-auto py-12">
-        <h1 className="text-3xl font-bold mb-4">Activity</h1>
-        <p>Welcome to our website! This is the activity page.</p>
-      </section>
-    </div>
-  );
-};
-
-export default ActivityPage;
+export default function ActivityPage() {
+  return <ActivityClient />;
+}
